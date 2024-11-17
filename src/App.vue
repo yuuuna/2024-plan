@@ -1,36 +1,25 @@
 <script setup lang="ts">
-import {ref} from 'vue';
-const a = ref('11');
-const b = ref('22');
+// import {ref} from 'vue';
 </script>
 
 <template>
   <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-    <span class="red">{{ a }}</span>
-    <span class="blue">{{ b }}</span>
+    <div class="card">
+      <h1>早安</h1>
+      <!-- <h1>歡迎來到 2024 生日祝賀網站</h1> -->
+      <img src="/src/assets/images/2024-1.jpeg" alt="hi" width="500" />
+    </div>
   </div>
 </template>
 
 <style lang="scss">
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-.red{
-  color: red;
+.card {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border: 2px solid #BBB;
+  border-radius: 10px;
+  img {
+    border: 8px;
+  }
 }
 </style>
